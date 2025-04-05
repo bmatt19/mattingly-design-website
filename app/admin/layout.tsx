@@ -1,4 +1,4 @@
-import "/styles/globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -54,7 +54,7 @@ export default function RootLayout({
               </div>
               <div>
                 <label htmlFor="message" className="block text-brown-900">Message</label>
-                <textarea id="message" name="message" rows={4} className="w-full p-2 border border-gray-300 rounded-md"></textarea> {/* Fixed rows here */}
+                <textarea id="message" name="message" rows={4} className="w-full p-2 border border-gray-300 rounded-md"></textarea>
               </div>
               <button type="submit" className="w-full bg-brown-900 text-white p-2 rounded-md">Send Message</button>
             </form>
@@ -67,5 +67,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
