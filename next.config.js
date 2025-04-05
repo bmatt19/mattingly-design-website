@@ -4,11 +4,10 @@ const path = require('path');
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['placeholder.com'],
+    domains: ['placeholder.com', 'jeremymattinglydesignsllc.com'], 
   },
   webpack: (config) => {
-    // Add the alias for '@'
-    config.resolve.alias['@'] = path.resolve(__dirname);
+    config.resolve.alias['@'] = path.resolve(__dirname, 'components'); 
     return config;
   },
 };
