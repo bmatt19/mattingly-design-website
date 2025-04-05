@@ -54,7 +54,7 @@ export default function RootLayout({
               </div>
               <div>
                 <label htmlFor="message" className="block text-brown-900">Message</label>
-                <textarea id="message" name="message" rows="4" className="w-full p-2 border border-gray-300 rounded-md"></textarea>
+                <textarea id="message" name="message" rows={4} className="w-full p-2 border border-gray-300 rounded-md"></textarea> {/* Fixed rows here */}
               </div>
               <button type="submit" className="w-full bg-brown-900 text-white p-2 rounded-md">Send Message</button>
             </form>
@@ -67,4 +67,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 
